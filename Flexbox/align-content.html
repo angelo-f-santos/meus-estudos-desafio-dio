@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">Angelo Freitas dos Santos</div>
+        <div class="item">34 anos</div>
+        <div class="item">Trabalhando atualmente na veolink</div>
+        <div class="item">Cargo: analista de especificação e orçamento</div>
+        <div class="item">Estudante de programação</div>
+        <div class="item">Cursando atualmente o bootcamp fullstack becas santander</div>
+        <div class="item">Na esperança de ingressar na area ainda esse ano</div>
+    </div>
+</body>
+</html>

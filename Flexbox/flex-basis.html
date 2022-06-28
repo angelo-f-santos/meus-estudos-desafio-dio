@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex basis</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 500px;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        .bwidth{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>flex basis auto</p>
+    <div class="container">
+        <div class="item bauto fg-1">A</div>
+        <div class="item bauto fg-1">B</div>
+        <div class="item bauto fg-1">Cgf,dfkldfdsklhdmldnbhklth</div>
+        <div class="item bauto fg-1">D</div>
+    </div>
+
+    <p>flex basis 0</p>
+    <div class="container">
+        <div class="item b-0 fg-1">A</div>
+        <div class="item b-0 fg-1"><p></p>Bajsdjaks</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-1">Ddfkljkljrasgdklgdfklvdaygj</div>
+    </div>
+
+    <p>flex basis width</p>
+    <div class="container">
+        <div class="item bwidth fg-1"><p></p>Adfgjsdlkgjdçlskjçlbkjçlakjghl</div>
+        <div class="item bwidth fg-1">B</div>
+        <div class="item bwidth fg-1">C</div>
+        <div class="item bwidth fg-1">D</div>
+    </div>
+</body>
+</html>
